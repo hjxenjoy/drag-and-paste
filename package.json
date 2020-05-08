@@ -1,19 +1,19 @@
 {
   "name": "drag-and-paste",
   "version": "1.0.0",
-  "description": "Made with create-react-library",
+  "description": "select files with drag and drop or paste",
   "author": "hjxenjoy",
   "license": "MIT",
   "repository": "hjxenjoy/drag-and-paste",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
-  "source": "src/index.tsx",
+  "source": "src/index.ts",
   "engines": {
     "node": ">=10"
   },
   "scripts": {
-    "build": "microbundle-crl --no-compress --format modern,cjs",
-    "start": "microbundle-crl watch --no-compress --format modern,cjs",
+    "build": "microbundle-crl --no-compress --format modern,cjs,umd",
+    "start": "microbundle-crl watch --no-compress --format modern,cjs,umd",
     "prepublish": "run-s build",
     "test": "run-s test:unit test:lint test:build",
     "test:build": "run-s build",
@@ -24,7 +24,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^16.8.6"
   },
   "devDependencies": {
     "@types/jest": "^25.1.4",

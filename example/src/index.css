@@ -12,3 +12,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app {
+  margin: 50px auto;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed #0eb6dc;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+.app:focus,
+.app.focused {
+  outline: none;
+  box-shadow: inset 0 0 15px rgba(14, 182, 200, 0.5);
+}
